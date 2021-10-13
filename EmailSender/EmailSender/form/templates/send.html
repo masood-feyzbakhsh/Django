@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Send an Email</title>
+</head>
+<body>
+    <form>
+      <table>
+        {{form}}
+      </table>
+      {% csrf_token %}
+      <button formmethod="POST"> Send </button>
+    </form>
+</body>
+</html>
